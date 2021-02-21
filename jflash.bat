@@ -6,7 +6,6 @@ if %errorlevel% equ 0 (
 set /a n=%n%+1
 set /p a=succeed:%n%
 ) else (
-find "ERROR" jlink.log
  set /p a = failed!!
 )
 if "%a%"=="" goto loop
